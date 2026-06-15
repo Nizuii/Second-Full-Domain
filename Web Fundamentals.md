@@ -62,4 +62,18 @@
 
    The TLS certificate is issued by a trusted Certificate Authority (CA) like DigiCert or let's encrypt. It proves the server's identity.
 
-3. HSTS is a security header.
+3. HSTS (HTTP Strict Transport Security) is a security header. Imagine this scenario:
+   ```bash
+   1. You type "example.com" in your browser
+   2. Browser first makes an HTTP request (because you didn't type https://)
+   3. Server redirects you to HTTPS → 301 redirect
+   4. NOW you're on HTTPS
+   ```
+
+   That step 2 and 3 is dangerous. An attacker can intercept that initial HTTP request and downgrade your connection — this is called an SSL Stripping Attack. HSTS is the security header that server sends to your browser that says:
+   > "For the next X days, NEVER connect to me over HTTP. Always use HTTPS directly, no exceptions."
+
+   The header looks like this:
+   ```bash
+   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+   ```
