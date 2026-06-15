@@ -1,4 +1,4 @@
-# Modern Web Application and Protocol Basics
+<img width="1270" height="934" alt="image" src="https://github.com/user-attachments/assets/93213008-cb6d-44fd-8d06-4a1bed54897b" /># Modern Web Application and Protocol Basics
 
 ## What is WWW?
 
