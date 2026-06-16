@@ -73,3 +73,5 @@ A **Load Balancer** distributes incoming network traffic across multiple backend
                           │ (Down - skip)│
                           └──────────────┘
 ```
+
+The LB continuously runs health checks on backend servers, and only routes traffic to healthy ones.
