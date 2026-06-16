@@ -124,3 +124,6 @@ Client                                  Server
 3. Connection upgrades from HTTP → WebSocket (`ws://` or `wss://` for secure)
 4. Both sides can now push data without re-requesting.
 
+## HTTP/2
+
+HTTP/2 is a major revision of HTTP that improves performance over HTTP/1.1, while keeping the same semantics
