@@ -47,3 +47,7 @@ Client (Browser)                        Server
           <td>All further traffic encrypted with that session key (symmetric)</td>
      </tr>
 </table>
+
+## Load Balancers
+
+A **Load Balancer** distributes incoming network traffic across multiple backend servers, so no single server gets overwhelmed.
