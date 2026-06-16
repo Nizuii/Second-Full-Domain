@@ -56,3 +56,20 @@ A **Load Balancer** distributes incoming network traffic across multiple backend
 
 **Without it**: one server crashes under load → entire app goes down.     
 **With it**: traffic spreads → high availability, fault tolerance, scalability.
+
+```bash
+                          ┌──────────────┐
+                          │   Server 1   │
+                       ┌─►│  (Healthy)   │
+                       │  └──────────────┘
+   Client Requests     │
+        │              │  ┌──────────────┐
+        ▼              ├─►│   Server 2   │
+   ┌─────────────┐     │  │  (Healthy)   │
+   │Load Balancer│─────┤  └──────────────┘
+   └─────────────┘     │
+                       │  ┌──────────────┐
+                       └─►│   Server 3   │
+                          │ (Down - skip)│
+                          └──────────────┘
+```
