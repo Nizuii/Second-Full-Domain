@@ -123,3 +123,4 @@ Client                                  Server
 2. Server responds `101 Switching Protocols`
 3. Connection upgrades from HTTP → WebSocket (`ws://` or `wss://` for secure)
 4. Both sides can now push data without re-requesting.
+
