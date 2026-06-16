@@ -84,3 +84,17 @@ A CDN is a globally distributed network of servers that cache  and deliver conte
 > Think of it as regional warehouses instead of one factory. If someone in Tokyo wants your product, they shouldn't have to wait for it to ship from your single factory in Virginia.
 
 Common CDN providers: Cloudflare, Akamai, AWS CloudFront, Fastly.
+
+```bash
+User in India  ──►  Nearest Edge Server (Mumbai PoP)
+                            │
+                     [Cache HIT?] 
+                       /        \
+                    YES           NO
+                     │             │
+              Serve from     Fetch from Origin
+              Edge Cache     Server, cache it,
+              (fast!)        then serve to user
+```
+
+CDNs are great for static content (images, JS, CSS, videos) but modern CDNs also do dynamic content acceleration and act as a reverse proxy in front of your origin.
