@@ -98,3 +98,7 @@ User in India  ──►  Nearest Edge Server (Mumbai PoP)
 ```
 
 CDNs are great for static content (images, JS, CSS, videos) but modern CDNs also do dynamic content acceleration and act as a reverse proxy in front of your origin.
+
+## WebSockets
+
+WebSockets is a protocol that provides a persistent, full-duplex (2 way) connection between client and server over a single TCP connection.
