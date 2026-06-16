@@ -20,3 +20,30 @@ Client (Browser)                        Server
      |                                     |
      | ====== Encrypted Traffic ========== |
 ```
+
+<table>
+     <tr>
+          <th>Step</th>
+          <th>What happens</th>
+     </tr>
+     <tr>
+          <td>ClientHello</td>
+          <td>Browser says: "I support TLS 1.3, here are my cipher suites"</td>
+     </tr>
+     <tr>
+          <td>ServerHello</td>
+          <td>Server picks a cipher, sends its SSL certificate</td>
+     </tr>
+     <tr>
+          <td>Certificate Verification</td>
+          <td>Browser checks cert is signed by a trusted CA (Certificate Authority)</td>
+     </tr>
+     <tr>
+          <td>Key Exchange</td>
+          <td>Both sides derive a shared session key (using asymmetric crypto)</td>
+     </tr>
+     <tr>
+          <td>Encrypted Channel</td>
+          <td>All further traffic encrypted with that session key (symmetric)</td>
+     </tr>
+</table>
