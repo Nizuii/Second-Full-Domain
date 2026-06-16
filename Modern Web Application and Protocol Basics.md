@@ -75,3 +75,12 @@ A **Load Balancer** distributes incoming network traffic across multiple backend
 ```
 
 The LB continuously runs health checks on backend servers, and only routes traffic to healthy ones.
+
+
+## CDN (Content Delivery Network)
+
+A CDN is a globally distributed network of servers that cache  and deliver content from a location physically closer to a user, instead of every request hitting your origin server.
+
+> Think of it as regional warehouses instead of one factory. If someone in Tokyo wants your product, they shouldn't have to wait for it to ship from your single factory in Virginia.
+
+Common CDN providers: Cloudflare, Akamai, AWS CloudFront, Fastly.
