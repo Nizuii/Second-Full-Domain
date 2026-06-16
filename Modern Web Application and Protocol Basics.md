@@ -105,3 +105,16 @@ WebSockets is a protocol that provides a persistent, full-duplex (2 way) connect
 
 **Without Socket**: Your browser asks the server for something → server responds → connection closes. If you need new data, you must ask again. This is like hanging up the phone after every sentence and redialing.     
 **With WebSocket**: You open one connection and it stays open. Both sides can send messages anytime without waiting for the other to ask. This is like a normal phone call.
+
+```bash
+Client                                  Server
+   │                                       │
+   │── HTTP GET (Upgrade: websocket) ────► │   ← Handshake
+   │◄─ 101 Switching Protocols ─────────── │
+   │                                       │
+   │═══════ Persistent TCP Connection ════ │
+   │                                       │
+   │── Message ───────────────────────────►│  (anytime)
+   │◄────────────────────── Message ───────│  (anytime)
+   │                                       │
+```
