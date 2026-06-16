@@ -51,3 +51,8 @@ Client (Browser)                        Server
 ## Load Balancers
 
 A **Load Balancer** distributes incoming network traffic across multiple backend servers, so no single server gets overwhelmed.
+
+> Think of it as a traffic cop standing in front of a row of servers, directing each car (request) to whichever lane (server) is least busy or best suited.
+
+**Without it**: one server crashes under load → entire app goes down.     
+**With it**: traffic spreads → high availability, fault tolerance, scalability.
