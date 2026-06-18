@@ -145,15 +145,19 @@ REST is an architectural style, not a strict protocol. It uses standard HTTP met
       <th>Meaning</th>
    </tr>
    <tr>
-      <td><strong></strong></td>
-      <td></td>
+      <td><strong>Resources</strong></td>
+      <td>Everything is a resource (users, orders, payments) identified by a URL</td>
    </tr>
    <tr>
-      <td><strong></strong></td>
-      <td></td>
+      <td><strong>HTTP Methods</strong></td>
+      <td>Use verbs to act on resources: GET, POST, PUT, DELETE</td>
    </tr>
    <tr>
-      <td><strong></strong></td>
-      <td></td>
+      <td><strong>Stateless</strong></td>
+      <td>Each request contains all info needed; server doesn't remember previous requests</td>
+   </tr>
+   <tr>
+      <td><strong>JSON/XML</strong></td>
+      <td>Data is typically sent as lightweight JSON</td>
    </tr>
 </table>
