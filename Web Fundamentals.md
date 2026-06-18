@@ -134,3 +134,26 @@ HTTP/2 is a major revision of HTTP that improves performance over HTTP/1.1, whil
       <td>Client can hint which resources are more important to load first</td>
    </tr>
 </table>
+
+## REST (Representational State Transfer).
+
+REST is an architectural style, not a strict protocol. It uses standard HTTP methods to interact with resources.
+
+<table>
+   <tr>
+      <th>Concept</th>
+      <th>Meaning</th>
+   </tr>
+   <tr>
+      <td><strong></strong></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><strong></strong></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td><strong></strong></td>
+      <td></td>
+   </tr>
+</table>
