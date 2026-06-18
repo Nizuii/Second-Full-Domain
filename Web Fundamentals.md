@@ -103,3 +103,34 @@ Now lets take a look at how it works:
 2. **Persistent connection**: The connection stays open (unlike HTTP, which closes after each response)
 3. **Bidirectional**: Either side can send data at any time.
 4. **Lightweight**: Messages have minimal overhead compared to HTTP headers.
+
+## HTTP/2
+
+HTTP/2 is a major revision of HTTP that improves performance over HTTP/1.1, while keeping the same semantics (same methods, status codes, headers). Key features are:
+
+<table>
+   <tr>
+      <th>Feature</th>
+      <th>What it Does</th>
+   </tr>
+   <tr>
+      <td><strong>Multiplexing</strong></td>
+      <td>Multiple requests/responses sent in parallel over one TCP connection (no more head-of-line blocking like HTTP/1.1)</td>
+   </tr>
+   <tr>
+      <td><strong>Header Compression (HPACK)</strong></td>
+      <td>Reduces overhead of repetitive headers</td>
+   </tr>
+   <tr>
+      <td><strong>Binary Protocol</strong></td>
+      <td>Instead of plain text, HTTP/2 uses binary framing — faster parsing</td>
+   </tr>
+   <tr>
+      <td><strong>Server Push</strong></td>
+      <td>Server can proactively send resources before client even asks (mostly deprecated now in practice)</td>
+   </tr>
+   <tr>
+      <td><strong>Stream Prioritization</strong></td>
+      <td>Client can hint which resources are more important to load first</td>
+   </tr>
+</table>
